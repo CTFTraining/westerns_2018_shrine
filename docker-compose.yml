@@ -3,7 +3,7 @@ version: "2"
 services:
 
   web:
-    build: .
+    # build: .
     image: ctftraining/westerns_2018_shrine
     restart: always
     ports:
