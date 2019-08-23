@@ -3,7 +3,10 @@ version: "2"
 services:
 
   web:
+    build: .
     image: ctftraining/westerns_2018_shrine
     restart: always
     ports:
       - "127.0.0.1:8081:5000"
+    environment:
+      - FLAG=flag{flag_test}
